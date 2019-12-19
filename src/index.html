@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="theme ">
+    <div class="container header clearfix fixed">
+        <div class="fleft">
+            <img src="images/logo.png">
+        </div>
+        <div class="fright">
+            <ul class="menu horizontal centered ">
+                <li data-menuanchor="one"><a href = "#one">Home</a></li>
+                <li data-menuanchor="two"><a href = "#two">Food</a></li>
+                <li data-menuanchor="three"><a href = "#three">Party</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainWrapper">
+    <div class="wrapper home section" data-anchor="one">
+        <div class="clearfix container_small content">
+            <div class="fleft">
+                <h2>Welcome to The Spoon</h2>
+                <p>Hey folks! Thanks for coming!</p>
+                <p>Please don't panic! Everything is vegan and organic!</p>
+                <div class="links"><a class="button" href="images/menu.pdf">Download the menu </a><a class="button" href="mailto:spoon@gmai.com"> Contact us</a></div>
+            </div>
+        </div>
+    </div>    
+           
+    <div class="container section" data-anchor="two">    
+        <div class="main clearfix" >
+            <h2>What we serve:</h2>
+            <div class="product fleft">
+                <a href="/">
+                    <h3><span>HUMMUS</span><br>
+                        <span class="price">120UAH</span>
+                    </h3>
+                    <img src="images/hummus.png">
+                    
+                </a>
+            </div>
+            <div class="product fleft">
+                <a href="/">
+                    <img src="images/salad.png">
+                    <h3><span>FAUX-CHÈVRE SALAD</span>
+                        <span class="price">100UAH</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="product fleft">
+                <a href="/">
+                    <img src="images/croq.png">
+                    <h3><span>THOR CROQUETTES</span>
+                        <span class="price">90UAH</span>
+                    </h3>
+                </a>
+            </div>
+        </div>
+        <div class="main clearfix margin-top" >
+                 <div class="product fleft">
+                <a href="/">
+                    <h3><span>BUTTERNUT SQUASH POLENTA</span>
+                        <span class="price">190UAH</span>
+                    </h3>
+                    <img src="images/polenta.png">
+                </a>
+            </div>
+            <div class="product fleft">
+                <a href="/">
+                    <img src="images/Natural-Fruit-Juices-for-Summer-800x500-s.png">
+                    <h3><span>Beverages</span>
+                        <span class="price">Coctails from 100UAH</span>
+                    </h3>
+                </a>
+            </div>
+            <div class="product fleft">
+                <a href="/">
+                    <img src="images/party.png">
+                    <h3><span>Party</span>
+                        <span class="price">From 300UAH per person</span>
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper party section" data-anchor="three">
+            <div class="clearfix container_small content">
+                <div class="fleft">
+                    <p class="margin-top">Let's Party!</p>
+                    <div class="links"><a class="button" href="images/menu.pdf">Download the menu </a><a class="button" href="mailto:spoon@gmai.com"> Contact us</a></div>
+                    <form action="#" class="form-inline">
+                    <div class="input_wrap">
+                        <div>How many people will attend</div><input type="text" id="people" class="form-control" placeholder="0">
+                    </div>
+                    <div class="input_wrap">
+                        <div>Number of courses per person</div><input type="text" id="courses" class="form-control" placeholder="0">
+                    </div>
+                    <div class="input_wrap">
+                        <div>Number of coctails per person</div><input type="text" id="coctails" class="form-control" placeholder="0">
+                    </div>  
+                    </form>
+                      
+                    <h2 id="result"></h2>
+                </div>
+                <div class="fright">
+                    <h2>The Day you NEVER FORGET!</h2>
+                    <p>Trust us!</p>
+                    <p>We will turn your event in something special!</p>
+                    </div>
+                </div>
+            </div>    
+        </div>        
+    </div>
+</body>

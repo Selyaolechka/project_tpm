@@ -1,0 +1,311 @@
+/*_______________________RESET________________________________________*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-family: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+outline: none;
+}
+/*_______________________END OF RESET________________________________________*/
+
+
+
+
+.margin-top {
+    margin-top: 40px;
+} 
+
+.container {
+    width: 80%;
+    margin:  0 auto 0 auto
+}
+
+.container_small {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.section {
+    padding-top: 80px;
+}
+.centered {
+    text-align: center;
+}
+
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+
+.clearfix {
+    &:after, &:before {
+    content: "";
+    display: table;
+    }
+    &:after{
+        clear: both;
+    }
+}
+body {
+    margin:0;
+    padding:0;
+    &.theme {
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        p{
+            letter-spacing: 2px;
+            line-height: 1.5;
+        }
+        h1 {
+            font-size: 56px;
+            margin: 50px 0;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 2;  
+            margin: 40px 0;
+        }
+        .button {
+            border: 4px solid #f07e1c;
+            border-radius: 25px;
+            background-color: #1c824e;
+            padding: 10px;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}
+.header {
+    background-color: rgb(17, 121, 68);
+    >div {
+        height: 80px;
+        
+
+    }
+    img {
+        max-height: 100%;
+    }
+    &.fixed{
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.menu {
+    &.horizontal {
+        li {
+            display: inline-block;
+            a {
+                font-size: 14px;
+                line-height: 80px;
+                text-transform: uppercase;
+                margin-right: 30px;
+            }
+        }
+    }
+    &.fixed {
+        position: fixed;
+        z-index: 10;
+        top:0;
+        right: 20px;
+    }
+}
+.wrapper {
+    width: 100%;
+    height: 600px;
+    padding-top: 50px;
+    &.home {
+        background-image: url("images/origin.jpg");
+        background-position: 50%;
+        background-size: cover;
+    }
+    &.party {
+        background-image: url("images/back_party1.png");
+        background-position: 50%;
+        background-size: cover; 
+        border-top: 3px solid #f07e1c;
+        .content {
+            margin-top: 0;
+            color: #1c824e;
+            .links {
+                color: #fff;
+            }
+        }
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .links {
+        margin-top: 40px;
+        >* {
+            margin-right: 20px;
+        }
+    }
+    
+
+}
+
+.main {
+    h2 {
+        color: #f07e1c;
+        text-align: center;
+
+    }
+    .product {
+        text-align: center;
+        width: 33%;
+        padding: 0 30px;
+        position: relative;
+        img {
+            border: 6px solid #f07e1c;
+            border-radius: 50%; 
+        }
+        h3 {
+            align-items: center;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: opacity 0.25s;
+            z-index:3;
+            // background: linear-gradient(65deg, rgba(46,204,113,0.4), rgba(102,51,153,0.4) 60%); 
+            // background-color: rgba(46,204,113,0.4); 
+            color: #fafafa;
+            font-size: 24px;
+            flex-wrap: wrap;
+            span {
+                display: block;
+                padding: 10px;
+                background-color:rgba(28,130,78,0.8);
+                line-height: 30px;
+                width: 100%;
+            } 
+            .price{
+                display: none;
+            }
+        }
+        &:nth-child(2){
+            a:hover{
+                h3 {
+                    background: linear-gradient(65deg, rgba(217,30,24,0.2), rgba(102,51,153,0.2) 60%);
+                    background-color: rgba(217,30,24,0.2);
+                 
+                }
+            }
+        }
+        &:nth-child(3){
+            a:hover{
+                h3 {
+                    background-color: rgba(46,204,113,0.2);
+                    background: linear-gradient(65deg, rgba(46,204,113,0.2), rgba(243,156,18,0.2));
+                 
+                }
+            }
+        }
+        a {
+           border-radius: 100%;
+           display: flex;
+           flex: 0 0 250px;
+           height: 250px;
+           justify-content: center;
+           overflow: hidden;
+           position: relative;
+           width: 250px;
+           margin: 0 auto;
+           &:hover{
+               h3 {
+                background: linear-gradient(65deg, rgba(46,204,113,0.2), rgba(102,51,153,0.2) 60%); 
+                background-color: rgba(46,204,113,0.2);  
+                .price{
+                    display: block;
+                }
+               }
+           }
+        }
+        img{
+            height: 100%;
+        }
+    }
+}
+form {
+    .input_wrap{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        div {
+            min-width: 300px;
+        }
+    }
+    input {
+        width:100%;
+        max-width:20px;
+        height: 20px;
+        display: block;
+        border: 4px solid #f07e1c;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: normal;
+        line-height: 1.5;
+
+    }
+}
+

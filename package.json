@@ -1,0 +1,31 @@
+{
+  "name": "cd",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selyaolechka/project_tpm.git"
+  },
+  "keywords": [
+    "build",
+    "less"
+  ],
+  "author": "selya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Selyaolechka/project_tpm/issues"
+  },
+  "homepage": "https://github.com/Selyaolechka/project_tpm#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
+  },
+  "dependencies": {
+    "less": "^3.10.3"
+  }
+}
